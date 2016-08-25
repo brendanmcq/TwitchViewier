@@ -6,6 +6,7 @@ import threading
 import time
 from Queue import Queue
 
+#Python 2.x and the pip modules requests and livestreamer
 numberOfViewers = int(sys.argv[1])
 builderThreads = int(sys.argv[2])
 startTime = time.time()
