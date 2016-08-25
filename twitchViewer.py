@@ -15,7 +15,7 @@ urls = []
 urlsUsed = []
 
 def getURL(): # Get tokens
-  output = subprocess.Popen(["livestreamer", "twitch.tv/CHANNEL_NAME", "-j"], stdout=subprocess.PIPE).communicate()[0]
+  output = subprocess.Popen(["livestreamer", "twitch.tv/UncannyAnon", "-j"], stdout=subprocess.PIPE).communicate()[0]
 	return json.loads(output)['streams']['worst']['url'] # Parse json and return the URL parameter
 
 def build(): # Builds a set of tokens, aka viewers
